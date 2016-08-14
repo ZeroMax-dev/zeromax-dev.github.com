@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Andreas Metzger - Portfolio</title>
+        <meta name="description" content="Andreas Metzger - Homepage and Portfolio">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+        <link href='https://fonts.googleapis.com/css?family=Lato:300,400,400italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/vendor/normalize.css">
+        <link rel="stylesheet" href="css/vendor/highslide.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body class="frontpage">
+        <header>
+            <div id="videocontrol" class="play">
+              <span class="left"></span><span class="right"></span>
+            </div>
+            <div id="front">
+                <div id="headwrapper">
+                    <h1>Andreas Metzger</h1>
+                </div>
+                <div id="scrollarrow">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         width="60px" height="30px" viewBox="0 0 60 30" enable-background="new 0 0 60 30" xml:space="preserve">
+                    <polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="53.459,3.765 29.998,25.952 6.54,3.765 "/>
+                    </svg>
+                </div>
+            </div>
+            <div id="bg">
+                <div id="maskcontrol"></div>
+                <img src="img/mask.svg">
+                <video autoplay loop muted poster="img/bgposter.jpg">
+                    <source src="vid/bg.mp4" type="video/mp4">
+                    <source src="vid/bg.webm" type="video/webm">
+                </video>
+            </div>
+        </header>
+        <aside id="dev"></aside>
+        <main>
+            <h1>Selected projects</h1>
+            <hr/>
+            <div id="grid">
+                <figure class="main">
+                    <a href="streem.html">
+                        <img src="img/streem.jpg"/>
+                        <figcaption>Streem</figcaption>
+                    </a>
+                </figure>
+                <figure class="main">
+                    <a href="kristallhorizont.html">
+                        <img src="img/horizont.jpg"/>
+                        <figcaption>Kristallhorizont</figcaption>
+                    </a>
+                </figure>
+                <figure class="main">
+                    <a href="explorerdesign.html">
+                        <img src="img/explorerdesign.jpg"/>
+                        <figcaption>Touch-Optimized Explorer Design</figcaption>
+                    </a>
+                </figure>
+                <figure class="main">
+                    <a href="intramat.html">
+                        <img src="img/intramat.jpg"/>
+                        <figcaption>IntraMat</figcaption>
+                    </a>
+                </figure>
+                <figure class="main">
+                    <a href="entropy.html">
+                        <img src="img/entropy.jpg"/>
+                        <figcaption>Entropy</figcaption>
+                    </a>
+                </figure>
+            </div>
+        </main>
+        <footer>
+            <div><div>
+                <p>&copy;2016 Andreas Metzger</p>
+            </div></div>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery.easing.min.js"><\/script>')</script>
+        <script>
+            $(document).ready(function() {
+                $("main").addClass("halt");
+                var firstplay = true;
+                $("header video").on("playing",function(){
+                    if(firstplay) {
+                        $("#videocontrol").removeClass("play").addClass("pause");
+                        firstplay = false;
+                    }
+                });
+
+                var checkplay = function() {
+                    if($("main").hasClass("halt") && $(document).scrollTop()+$(window).height() > $("main h1").offset().top+$("main h1").innerHeight()) {
+                        $("main").removeClass("halt");
+                    }
+                };
+                checkplay();
+                $(document).scroll(checkplay);
+
+                $("#scrollarrow").click(function() {
+                    $("html, body").animate({ scrollTop: $("header").outerHeight() }, 1000, "easeInOutQuint");
+                });
+
+                $("#videocontrol").click(function() {
+                    var $this = $(this);
+                    if($this.hasClass("pause")) $("#bg video")[0].pause();
+                    else if($this.hasClass("play")) $("#bg video")[0].play();
+                    $this.toggleClass("play pause");
+                });
+
+                $("#maskcontrol").hover(function() {$("#bg img").attr("class","hover");$("#scrollarrow, #videocontrol").addClass("hidden")},function() {$("#bg img").attr("class","");$("#scrollarrow, #videocontrol").removeClass("hidden")});
+            });
+        </script>
+<!--
+        <script src="js/vendor/highslide-full.js"></script>
+        <script src="js/slide_basic.js"></script>
+-->
+    </body>
+</html>

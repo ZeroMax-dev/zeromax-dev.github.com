@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Touch-Optimized Explorer Design - Andreas Metzger</title>
+        <meta name="description" content="Andreas Metzger Portfolio Project">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href='https://fonts.googleapis.com/css?family=Lato:300,400,400italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/vendor/normalize.css">
+        <link rel="stylesheet" href="css/vendor/highslide.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <header>
+            <h1>Touch-Optimized Explorer Design</h1>
+            <hr id="headhr"/>
+        </header>
+
+        <main>
+            <div class="main">
+
+            <figure class="main">
+                <div class="highslide-gallery" style="text-align:center;">
+
+
+                <a id="slideshow" href="img/explorerdesign/Image0001.jpg" class="highslide" onclick="return hs.expand(this)">
+                    <img src="img/explorerdesign/Image0001.jpg" alt="Slideshow" width="450"
+                        title="Click to enlarge" />
+                </a>
+                <div class="highslide-caption">
+                    The standard layout. I decided to have the displayed hierarchy be a unix-like file system with a root directory.
+                </div>
+
+
+                <div class="hidden-container">
+
+                <a href="img/explorerdesign/Image0002.jpg" class="highslide" onclick="return hs.expand(this)">
+                    <img src="img/explorerdesign/Image0002.jpg" alt="Highslide JS" width="150"
+                        title="Click to enlarge" />
+                </a>
+                <div class="highslide-caption">
+                    Red strokes visualize a touch gesture. In this case it is an upward flick.
+                </div>
+
+                <a href="img/explorerdesign/Image0003.jpg" class="highslide" onclick="return hs.expand(this)">
+                    <img src="img/explorerdesign/Image0003.jpg" alt="Highslide JS" width="150"
+                        title="Click to enlarge" />
+                </a>
+                <div class="highslide-caption">
+                    A circle indicates a single dip, equivalent to a mouse's left click. This way, files...
+                </div>
+
+                <a href="img/explorerdesign/Image0004.jpg" class="highslide" onclick="return hs.expand(this)">
+                    <img src="img/explorerdesign/Image0004.jpg" alt="Highslide JS" width="150"
+                        title="Click to enlarge" />
+                </a>
+                <div class="highslide-caption">
+                    ... and folders are being selected. Note the information pane on the upper right.
+                </div>
+
+                <a href="img/explorerdesign/Image0005.jpg" class="highslide" onclick="return hs.expand(this)">
+                    <img src="img/explorerdesign/Image0005.jpg" alt="Highslide JS" width="150"
+                        title="Click to enlarge" />
+                </a>
+                <div class="highslide-caption">
+                    If a folder contains too much elements, files and folders will be grouped. Having 5837 elements to flick through would be really annoying.
+                </div>
+
+                <a href="img/explorerdesign/Image0006.jpg" class="highslide" onclick="return hs.expand(this)">
+                    <img src="img/explorerdesign/Image0006.jpg" alt="Highslide JS" width="150"
+                        title="Click to enlarge" />
+                </a>
+                <div class="highslide-caption">
+                    In this case, elements are sorted alphabetically.
+                    Letters that do not contain elements are still displayed to keep conformity. Otherwise, all subsequent folders would shift to the left, changing the appearance for every folder to a different letter layout.
+                </div>
+
+                <a href="img/explorerdesign/Image0007.jpg" class="highslide" onclick="return hs.expand(this)">
+                    <img src="img/explorerdesign/Image0007.jpg" alt="Highslide JS" width="150"
+                        title="Click to enlarge" />
+                </a>
+                <div class="highslide-caption">
+                    Intead of double clicking and dragging, holding the position until the second
+                    stroke appears and flicking afterwards may be a more continuous and comfortable gesture.
+                    Holding until a second stroke appears is regarded as the aquivalent to a mouse right click.
+                </div>
+
+                <a href="img/explorerdesign/Image0008.jpg" class="highslide" onclick="return hs.expand(this)">
+                    <img src="img/explorerdesign/Image0008.jpg" alt="Highslide JS" width="150"
+                        title="Click to enlarge" />
+                </a>
+                <div class="highslide-caption">
+                    All files and folder beginning with the letter 'L' are displayed.
+                </div>
+
+                <a href="img/explorerdesign/Image0009.jpg" class="highslide" onclick="return hs.expand(this)">
+                    <img src="img/explorerdesign/Image0009.jpg" alt="Highslide JS" width="150"
+                        title="Click to enlarge" />
+                </a>
+                <div class="highslide-caption">
+                    The right half of the information pane in the upper right is designed to react to different file types. In this case,
+                    video specific information are shown.
+                </div>
+
+                <a href="img/explorerdesign/Image0010.jpg" class="highslide" onclick="return hs.expand(this)">
+                    <img src="img/explorerdesign/Image0010.jpg" alt="Highslide JS" width="150"
+                        title="Click to enlarge" />
+                </a>
+                <div class="highslide-caption">
+                    In order to select multiple files, the the green action field is selected.
+                </div>
+
+                <a href="img/explorerdesign/Image0011.jpg" class="highslide" onclick="return hs.expand(this)">
+                    <img src="img/explorerdesign/Image0011.jpg" alt="Highslide JS" width="150"
+                        title="Click to enlarge" />
+                </a>
+                <div class="highslide-caption">
+                    Every element has been provided with a checkbox. Elements to be selected are tipped. The information pane provides information about the overall set of elements.
+                </div>
+
+                <a href="img/explorerdesign/Image0012.jpg" class="highslide" onclick="return hs.expand(this)">
+                    <img src="img/explorerdesign/Image0012.jpg" alt="Highslide JS" width="150"
+                        title="Click to enlarge" />
+                </a>
+                <div class="highslide-caption">
+                    The purple action field will splitt the filesystem window to enable a dual view.
+                </div>
+
+                <a href="img/explorerdesign/Image0013.jpg" class="highslide" onclick="return hs.expand(this)">
+                    <img src="img/explorerdesign/Image0013.jpg" alt="Highslide JS" width="150"
+                        title="Click to enlarge" />
+                </a>
+                <div class="highslide-caption">
+                    To be able to quickly jump to your destination folder a search bar is provided.
+                </div>
+
+                <a href="img/explorerdesign/Image0014.jpg" class="highslide" onclick="return hs.expand(this)">
+                    <img src="img/explorerdesign/Image0014.jpg" alt="Highslide JS" width="150"
+                        title="Click to enlarge" />
+                </a>
+                <div class="highslide-caption">
+                    The search bar holds any file and folder in the filesystem
+                    and is instantly able to make appropriate suggestions based on your input. Typing Enter on
+                    your physical or virtual keyboard will call the first recommendation (in the white box).
+                    Search results will adapt to your previous searches.
+                    Note that the tree immediately jumps to the destination that is selected in the white box.
+                </div>
+
+                <a href="img/explorerdesign/Image0015.jpg" class="highslide" onclick="return hs.expand(this)">
+                    <img src="img/explorerdesign/Image0015.jpg" alt="Highslide JS" width="150"
+                        title="Click to enlarge" />
+                </a>
+                <div class="highslide-caption">
+                    Alternatively you can flick out your favorites bar, which gives you access to your most used files or folders.
+                </div>
+
+                <a href="img/explorerdesign/Image0016.jpg" class="highslide" onclick="return hs.expand(this)">
+                    <img src="img/explorerdesign/Image0016.jpg" alt="Highslide JS" width="150"
+                        title="Click to enlarge" />
+                </a>
+                <div class="highslide-caption">
+                    The favorites bar is by default invisible and may be called at any time. Further changes regarding its behavious can be made in the options menu
+                    that can be dragged down via the small slider under the minimize-maximize-close button group.
+                </div>
+
+                <a href="img/explorerdesign/Image0017.jpg" class="highslide" onclick="return hs.expand(this)">
+                    <img src="img/explorerdesign/Image0017.jpg" alt="Highslide JS" width="150"
+                        title="Click to enlarge" />
+                </a>
+                <div class="highslide-caption">
+                    The information pane now shows information about the right window section since this is the one considered 'active'.
+                </div>
+
+                <a href="img/explorerdesign/Image0018.jpg" class="highslide" onclick="return hs.expand(this)">
+                    <img src="img/explorerdesign/Image0018.jpg" alt="Highslide JS" width="150"
+                        title="Click to enlarge" />
+                </a>
+                <div class="highslide-caption">
+                    Both views can be browsed independently from one another.
+                </div>
+
+                <a href="img/explorerdesign/Image0019.jpg" class="highslide" onclick="return hs.expand(this)">
+                    <img src="img/explorerdesign/Image0019.jpg" alt="Highslide JS" width="150"
+                        title="Click to enlarge" />
+                </a>
+                <div class="highslide-caption">
+                    The maximum number of elements displayed next to each other is five by default. This may also be changed in the options.
+                </div>
+
+                <a href="img/explorerdesign/Image0020.jpg" class="highslide" onclick="return hs.expand(this)">
+                    <img src="img/explorerdesign/Image0020.jpg" alt="Highslide JS" width="150"
+                        title="Click to enlarge" />
+                </a>
+                <div class="highslide-caption">
+                    Pressing the blue action field will copy your selected files to the destination directory.
+                </div>
+
+                <a href="img/explorerdesign/Image0021.jpg" class="highslide" onclick="return hs.expand(this)">
+                    <img src="img/explorerdesign/Image0021.jpg" alt="Highslide JS" width="150"
+                        title="Click to enlarge" />
+                </a>
+                <div class="highslide-caption">
+                    The information pane will provide information about progress and transfer speed.
+                </div>
+
+                <a href="img/explorerdesign/Image0022.jpg" class="highslide" onclick="return hs.expand(this)">
+                    <img src="img/explorerdesign/Image0022.jpg" alt="Highslide JS" width="150"
+                        title="Click to enlarge" />
+                </a>
+                <div class="highslide-caption">
+                    If you don't want to copy but instead move your files, press the orange action field right to the blue one.
+                </div>
+
+                <a href="img/explorerdesign/Image0023.jpg" class="highslide" onclick="return hs.expand(this)">
+                    <img src="img/explorerdesign/Image0023.jpg" alt="Highslide JS" width="150"
+                        title="Click to enlarge" />
+                </a>
+                <div class="highslide-caption">
+                    Tapping the purple field again will remove the split-view.
+                </div>
+
+                <a href="img/explorerdesign/Image0024.jpg" class="highslide" onclick="return hs.expand(this)">
+                    <img src="img/explorerdesign/Image0024.jpg" alt="Highslide JS" width="150"
+                        title="Click to enlarge" />
+                </a>
+                <div class="highslide-caption">
+                    Since the right window was the active one, the left window was closed.
+                </div>
+
+                <a href="img/explorerdesign/Image0025.jpg" class="highslide" onclick="return hs.expand(this)">
+                    <img src="img/explorerdesign/Image0025.jpg" alt="Highslide JS" width="150"
+                        title="Click to enlarge" />
+                </a>
+                <div class="highslide-caption">
+                    The search bar is not just used to initialize a new window section. You may also use it
+                    to quickly jump to a specific directory at any time. You can even open files directly if you
+                    want.
+                </div>
+
+                <a href="img/explorerdesign/Image0026.jpg" class="highslide" onclick="return hs.expand(this)">
+                    <img src="img/explorerdesign/Image0026.jpg" alt="Highslide JS" width="150"
+                        title="Click to enlarge" />
+                </a>
+                <div class="highslide-caption">
+                    Pressing enter will make the search bar disappear. If you want to use it again, just start typing.
+                </div>
+
+                <a href="img/explorerdesign/Image0027.jpg" class="highslide" onclick="return hs.expand(this)">
+                    <img src="img/explorerdesign/Image0027.jpg" alt="Highslide JS" width="150"
+                        title="Click to enlarge" />
+                </a>
+                <div class="highslide-caption">
+                    Again, you can use the favorites bar not just in split-view.
+                </div>
+
+                <a href="img/explorerdesign/Image0028.jpg" class="highslide" onclick="return hs.expand(this)">
+                    <img src="img/explorerdesign/Image0028.jpg" alt="Highslide JS" width="150"
+                        title="Click to enlarge" />
+                </a>
+                <div class="highslide-caption">
+                    Tipping the desired element will make you jump immediately to the destination.
+                </div>
+
+                <a href="img/explorerdesign/Image0029.jpg" class="highslide" onclick="return hs.expand(this)">
+                    <img src="img/explorerdesign/Image0029.jpg" alt="Highslide JS" width="150"
+                        title="Click to enlarge" />
+                </a>
+                <div class="highslide-caption">
+                    You are free to drag the filesystem as you like. The red action button by the way
+                    is to delete elements.
+                </div>
+
+                <a href="img/explorerdesign/Image0030.jpg" class="highslide" onclick="return hs.expand(this)">
+                    <img src="img/explorerdesign/Image0030.jpg" alt="Highslide JS" width="150"
+                        title="Click to enlarge" />
+                </a>
+                <div class="highslide-caption">
+                    Tipping the cyan action field will slide out a small menu...
+                </div>
+
+                <a href="img/explorerdesign/Image0031.jpg" class="highslide" onclick="return hs.expand(this)">
+                    <img src="img/explorerdesign/Image0031.jpg" alt="Highslide JS" width="150"
+                        title="Click to enlarge" />
+                </a>
+                <div class="highslide-caption">
+                    ... from which you can make new files and folders. The menu shown has only two entries,
+                    additional file types may of course also be supported.
+                </div>
+
+                <a href="img/explorerdesign/Image0032.jpg" class="highslide" onclick="return hs.expand(this)">
+                    <img src="img/explorerdesign/Image0032.jpg" alt="Highslide JS" width="150"
+                        title="Click to enlarge" />
+                </a>
+                <div class="highslide-caption">
+                    To make a new element, just hold the new filetype for a short time and drag it out.
+                </div>
+
+                <a href="img/explorerdesign/Image0033.jpg" class="highslide" onclick="return hs.expand(this)">
+                    <img src="img/explorerdesign/Image0033.jpg" alt="Highslide JS" width="150"
+                        title="Click to enlarge" />
+                </a>
+                <div class="highslide-caption">
+                    Afterwards you are able to name the file accordingly.
+                </div>
+
+                <a href="img/explorerdesign/Image0034.jpg" class="highslide" onclick="return hs.expand(this)">
+                    <img src="img/explorerdesign/Image0034.jpg" alt="Highslide JS" width="150"
+                        title="Click to enlarge" />
+                </a>
+                <div class="highslide-caption">
+                    In general, if you want to rename a file or folder, just select it and press the pink
+                    "rename" action field. Alternatively you may also drag the element on that action field, just
+                    like on any other action field.
+                </div>
+
+                <a href="img/explorerdesign/Image0035.jpg" class="highslide" onclick="return hs.expand(this)">
+                    <img src="img/explorerdesign/Image0035.jpg" alt="Highslide JS" width="150"
+                        title="Click to enlarge" />
+                </a>
+                <div class="highslide-caption">
+                    Tapping the "new" action field makes the menu disappear again.
+                </div>
+
+                <a href="img/explorerdesign/Image0036.jpg" class="highslide" onclick="return hs.expand(this)">
+                    <img src="img/explorerdesign/Image0036.jpg" alt="Highslide JS" width="150"
+                        title="Click to enlarge" />
+                </a>
+                <div class="highslide-caption">
+                    Every action field has its own color for better recognition.
+                    Calling a context menu or a similar menu that has yet to be opened when wanting to perform an action
+                    will in general speed you down and decrease your workflow. Action fields are big enough to be tapped
+                    with fingers and yet allow enough space to be left for the actual filesystem structure.
+                </div>
+
+                <a href="img/explorerdesign/Image0037.jpg" class="highslide" onclick="return hs.expand(this)">
+                    <img src="img/explorerdesign/Image0037.jpg" alt="Highslide JS" width="150"
+                        title="Click to enlarge" />
+                </a>
+                <div class="highslide-caption">
+                    &copy; 2012 Andreas Metzger
+                </div>
+
+
+                </div>
+
+                </div>
+            </figure>
+
+            <figure class="small">
+                <a href="img/explorerdesign/Image0014.jpg" class="highslide" onclick="return hs.expand(this)">
+	<img src="img/explorerdesign/Image0014.jpg" alt="Zoom Image"
+		title="Click to enlarge"/></a>
+            </figure>
+
+            <figure class="small">
+                <a href="img/explorerdesign/Image0032.jpg" class="highslide" onclick="return hs.expand(this)">
+	<img src="img/explorerdesign/Image0032.jpg" alt="Zoom Image"
+		title="Click to enlarge"/></a>
+            </figure>
+
+            </div>
+
+            <section class="main">
+                <button type="button" onclick="return hs.expand(document.getElementById('slideshow'))">View Presentation</button>
+                <hr/>
+                <h3>Description:</h3>
+                <p>
+		This work is an interface study that was developed at the University of Arts Bremen.</p>
+                <p>
+		Especially now that market shares of tablet computers and other mobile touch devices gradually surpass that of conventional personal computers it is important to adapt established interface concepts to these new interaction paradigms. Until now prevailing mobile systems have failed to provide a touch-oriented filesystem explorer that features all the capabilities known from desktop systems in an efficient manner. The interface mockup presented here aims to provide a solution to this shortcoming.</p>
+                <p>
+		In this design concept, however, not only adaptions were performed. Established concepts that we use in our everyday work may be effective but not necessarily efficient. Concepts like multiple tabs have been around in web browsers for a while now but on most systems still haven't been applied to their filesystem explorers yet. Together with the simplification of UI functions and iconography the concept aims for an intuitive and drastically improved workflow, yet providing a high degree of flexibilty for larger and more complex tasks.</p>
+            </section>
+        </main>
+        <footer>
+            <div><div>
+                <p>&copy;2016 Andreas Metzger</p>
+            </div></div>
+        </footer>
+<!--
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+-->
+        <script src="js/vendor/highslide-full.js"></script>
+        <script src="js/slide_show.js"></script>
+    </body>
+</html>

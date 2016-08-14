@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>IntraMat - Andreas Metzger</title>
+        <meta name="description" content="Andreas Metzger Portfolio Project">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href='https://fonts.googleapis.com/css?family=Lato:300,400,400italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/vendor/normalize.css">
+        <link rel="stylesheet" href="css/vendor/highslide.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <header>
+            <h1>IntraMat</h1>
+            <hr id="headhr"/>
+        </header>
+
+        <main>
+            <div class="main">
+
+            <figure class="main">
+                <a href="img/intramat/scr1.jpg" class="highslide" onclick="return hs.expand(this)">
+	<img src="img/intramat/scr1.jpg" alt="Zoom Image"
+		title="Click to enlarge"/></a>
+                <figcaption><span>Figure 0:</span>Composing a matrix by manually assigning values to its elements.</figcaption>
+            </figure>
+
+            <figure class="small">
+                <a href="img/intramat/scr2.jpg" class="highslide" onclick="return hs.expand(this)">
+	<img src="img/intramat/scr2.jpg" alt="Zoom Image"
+		title="Click to enlarge"/></a>
+                <figcaption><span>Figure 1:</span>Setting the final exponent for the normalized matrix.</figcaption>
+            </figure>
+
+            <figure class="small">
+                <a href="img/intramat/scr3.jpg" class="highslide" onclick="return hs.expand(this)">
+	<img src="img/intramat/scr3.jpg" alt="Zoom Image"
+		title="Click to enlarge"/></a>
+                <figcaption><span>Figure 2:</span>Live, element-by-element matrix multiplication visualized.</figcaption>
+            </figure>
+
+            <figure class="small">
+                <a href="img/intramat/scr4.jpg" class="highslide" onclick="return hs.expand(this)">
+	<img src="img/intramat/scr4.jpg" alt="Zoom Image"
+		title="Click to enlarge"/></a>
+                <figcaption><span>Figure 3:</span>All matrices of the process on a grid in a side-by-side comparision.</figcaption>
+            </figure>
+            </div>
+
+            <section class="main">
+                <p>Exhibited at: <em>Frieder Nake - Licht ins Dunkel &middot; 15&nbsp;Dec &ndash; 28&nbsp;Dec&nbsp;2013 &middot; HfK public gallery</em></p>
+                <h3>Description:</h3>
+                <p>IntraMat is a digital art installation that pedagogic-didactically conveys the abstract process of matrix multiplication. It is an interactive, high fidelity interpretation of Frieder Nake's original image series <a href="http://www02.zkm.de/bit/index.php?option=com_content&task=view&id=53&Itemid=73" target="_blank">Matrizenmultiplikation</a> from 1967.
+                <p>The original images feature a series of matrices that are represented as grids of square color areas. Each image depicts a stochastic matrix that is gradually multiplied with itself, resulting in a more homogenous appearance in terms of color after every step. This is a common characteristic of all exponentiated stochastic matrices. Nake portrayed this behaviour in 50 small images, which are also among the first artworks that have been completely generated computationally.</p>
+                <p>Because computing capabilities were very limited at that time, Nake's artworks left no possibility for interactivity. As the goal was the didactical conveyance of a mathematical phenomenon, letting the visitor set up the initial matrix' values and enable individual experimentation would have been a great advantage. Now that computing resources and human interface devices are sufficiently developed IntraMat is able to provide these capabilities.</p>
+				<p>IntraMat not only enables interactivity but also uses computing resources to improve the intuitivity of the process. A physics engine gives all elements of the matrix natural behaviour and thus makes them tangible and predictable in their behaviour, assisting the user in his understanding of the various manipulation steps and the process as a whole. At the same time IntraMat respects the principle of its origin and replicates the exact same mathematical circumstances as the original, resulting in the same phenomenon that has already been demonstrated back then.</p>
+				<p>The installation has been shown in an exhibition dedicated to Nake's 75th birthday which he also attended.</p>
+            </section>
+        </main>
+        <footer>
+            <div><div>
+                <p>&copy;2016 Andreas Metzger</p>
+            </div></div>
+        </footer>
+<!--
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+-->
+        <script src="js/vendor/highslide-full.js"></script>
+        <script src="js/slide_basic.js"></script>
+    </body>
+</html>

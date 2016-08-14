@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Kristallhorizont - Andreas Metzger</title>
+        <meta name="description" content="Andreas Metzger Portfolio Project">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href='https://fonts.googleapis.com/css?family=Lato:300,400,400italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/vendor/normalize.css">
+        <link rel="stylesheet" href="css/vendor/highslide.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <header>
+            <h1>Kristallhorizont</h1>
+            <hr id="headhr"/>
+        </header>
+
+        <main>
+            <div class="main">
+
+            <figure class="main">
+                <a href="img/kristallhorizont/Kristallhorizont_full.jpg" class="highslide" onclick="return hs.expand(this)">
+	<img src="img/kristallhorizont/Kristallhorizont_thumb.jpg" alt="Zoom Image"
+		title="Click to enlarge"/></a>
+            </figure>
+
+            <figure class="small">
+                <a href="img/kristallhorizont/scr1.png" class="highslide" onclick="return hs.expand(this)">
+	<img src="img/kristallhorizont/scr1.png" alt="Zoom Image"
+		title="Click to enlarge"/></a>
+                <figcaption><span>Figure 1:</span>Grid view after vertex triangulation. The underlying image is the result of an edge detection algorithm on the source image.</figcaption>
+            </figure>
+
+            <figure class="small">
+                <a href="img/kristallhorizont/scr2.png" class="highslide" onclick="return hs.expand(this)">
+	<img src="img/kristallhorizont/scr2.png" alt="Zoom Image"
+		title="Click to enlarge"/></a>
+                <figcaption><span>Figure 2:</span>Result with vertices marked from the current iteration (green) and the previous iteration (blue).</figcaption>
+            </figure>
+
+            <figure class="small">
+                <a href="img/kristallhorizont/scr3.png" class="highslide" onclick="return hs.expand(this)">
+	<img src="img/kristallhorizont/scr3.png" alt="Zoom Image"
+		title="Click to enlarge"/></a>
+                <figcaption><span>Figure 3:</span>Through the interactive GUI, parameters of the algorithm can be easily modified and the result can be viewed instantly.</figcaption>
+            </figure>
+            </div>
+
+            <section class="main">
+                <h3>Description:</h3>
+                <p>"Kristallhorizont" (eng: 'Crystal horizon') is an artwork that is the result of a special course that dealt with topics of visualisation, 'algorithmic cliches' and generative design. The geometry of Kristallhorizont was
+		computed by an algorithm that I wrote. The algorithm called "Algorithmic&shy;Extrusion" takes a normal 2-dimensional image as input and extrudes a newly interpreted 3D-mesh out of it. By means of edge-detection,
+		voronoi computation, masking and interpolation methods a new object is created, that is however more than just a mere relief but with its clear triangular and polygonal shapes, edges and color gradients represents
+                    almost an epitome of contemporary computer-graphical paradigms.</p>
+            <p>
+		Kristallhorizont is the result of this algorithm, applied to an image that shows a wooden bridge that runs towards an horizon in the ocean. The resulting mesh was then exported and arranged in an external
+		3D-program and subsequently rendered with a raytracing-renderer, resulting in these special crystal-like characteristics that the surface exhibits, together with its unique gradient colors. The resulting image stands completely on its own and doesn't bear any resemblance anymore to the source image that
+		was used to create it.
+                </p>
+            </section>
+        </main>
+        <footer>
+            <div><div>
+                <p>&copy;2016 Andreas Metzger</p>
+            </div></div>
+        </footer>
+<!--
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+-->
+        <script src="js/vendor/highslide-full.js"></script>
+        <script src="js/slide_basic.js"></script>
+    </body>
+</html>
